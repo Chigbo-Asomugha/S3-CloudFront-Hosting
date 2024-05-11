@@ -6,7 +6,7 @@
 
 **INTRODUCTION**
 
-In this documentation, I would be deploying a one of the not-too-elaborate websites I wrote with just HTML and CSS, no javscript. I want to do this using Amazon S3 bucket as well as give it wings to fly using CloudFront as the content delivery network. The step-by-step process herein will help anyone who wants to achieve the same result at their own respective ends and convinience. To ensure a seamless process, make sure you have the files for your static website ready in some folders on your local machine.  
+In this documentation, I would be deploying one of the not-too-elaborate websites I wrote with just HTML and CSS, no javscript. I want to do this using Amazon S3 bucket as well as give it wings to fly using CloudFront as the content delivery network. The step-by-step process herein will help anyone who wants to achieve the same result at their own respective ends and convenience. To ensure a seamless process, make sure you have the files for your static website ready in some folders on your local machine.  
 
 **DEFINITION OF TERMS**
 
@@ -14,7 +14,7 @@ In this documentation, I would be deploying a one of the not-too-elaborate websi
 
 
 
-**Amazon S3:** This stands for Simple Storage System. It is an *Object Storage* service that allows you to store and retrieve data. It also provides you with virtually with an unlimited storage for all your file storage needs. 
+**Amazon S3:** This stands for Simple Storage System. It is an *Object Storage* service that allows you to store and retrieve data. It also provides you (virtually) with an unlimited storage for all your file storage needs. 
 
 
 **Amazon CloudFront:** This is a Content Delivery Network (CDN) service that accelerates the delivery of your website's contents to users around the world. It caches content at edge locations, reducing latency and improving speed. Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.
@@ -101,11 +101,11 @@ In this documentation, I would be deploying a one of the not-too-elaborate websi
 ![Createdistribution](18.CreateDistribution.png)
 
 
-17. When you are done creating a distribution, you will be greeted with an interface as this. Click on **Copy Policy**
+17. When you are done creating a distribution, you will be greeted with an interface as this. Click on **Copy Policy** to copy the policy created for your S3 by CloudFront. 
 
 ![alt text](CopyPolicy.png)
 
-18. Then navigate back to the bucket you created. Click on the **Permission** tab, croll down to **Bucket Policy** and click on **Edit** Then Paste the policy you just copied from the CloudFront Distribution on the interface.
+18. Then navigate back to the bucket you created. Click on the **Permission** tab, scroll down to **Bucket Policy** and click on **Edit** Then Paste the policy you just copied from the CloudFront Distribution on the interface.
 
 ```
 {
